@@ -18,7 +18,7 @@ do_install() {
 python do_display_banner() {
     bb.plain("***********************************************");
     bb.plain("*                                             *");
-    bb.plain("*  Example recipe created by bitbake-layers   *");
+    bb.plain("*  Dataloader created by RAMISETTY RANGANADH  *");
     bb.plain("*                                             *");
     bb.plain("***********************************************");
 }
