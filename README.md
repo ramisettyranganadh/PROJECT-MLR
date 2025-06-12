@@ -8,8 +8,8 @@
 6. IMAGE_INSTALL += "application"
 7. bitbake core-image-base -c clean; bitbake core-image-base;
 
-sudo apparmor_parser -R /etc/apparmor.d/unprivileged_userns;
-lsblk; sudo umount /dev/mmcblk0; sudo mkfs.vfat -F 32 /dev/mmcblk0;
-cd tmp/deploy/images/beaglebone-yocto/
-sudo dd if=core-image-base-beaglebone-yocto.rootfs.wic of=/dev/mmcblk0 status=progress bs=4M
+1. sudo apparmor_parser -R /etc/apparmor.d/unprivileged_userns;
+2. lsblk; sudo umount /dev/mmcblk0; sudo mkfs.vfat -F 32 /dev/mmcblk0;
+3. cd tmp/deploy/images/beaglebone-yocto/
+4. sudo dd if=core-image-base-beaglebone-yocto.rootfs.wic of=/dev/mmcblk0 status=progress bs=4M
 
