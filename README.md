@@ -14,4 +14,5 @@
 2. lsblk; sudo umount /dev/mmcblk0; sudo mkfs.vfat -F 32 /dev/mmcblk0;
 3. cd tmp/deploy/images/beaglebone-yocto/
 4. sudo dd if=core-image-base-beaglebone-yocto.rootfs.wic of=/dev/mmcblk0 status=progress bs=4M
+5. minicom -b 115200 -o -D /dev/ttyACM0
 
