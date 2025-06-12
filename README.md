@@ -8,6 +8,8 @@
 6. IMAGE_INSTALL += "application"
 7. bitbake core-image-base -c clean; bitbake core-image-base;
 
+-------------------------------------------------------------------
+
 1. sudo apparmor_parser -R /etc/apparmor.d/unprivileged_userns;
 2. lsblk; sudo umount /dev/mmcblk0; sudo mkfs.vfat -F 32 /dev/mmcblk0;
 3. cd tmp/deploy/images/beaglebone-yocto/
