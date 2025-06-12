@@ -4,4 +4,5 @@
 3. cd PROJECT-YOC; source oe-init-build-env;
 4. bitbake-layers add-layer ../../PROJECT-MLR;
 5. IMAGE_INSTALL += "dataloader"
-6. bitbake core-image-base -c clean; bitbake core-image-base;
+6. IMAGE_INSTALL += "application"
+7. bitbake core-image-base -c clean; bitbake core-image-base;
