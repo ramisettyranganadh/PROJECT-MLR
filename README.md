@@ -10,6 +10,9 @@
 
 -------------------------------------------------------------------
 
+UsrMerge SysVinit:
+VIRTUAL-RUNTIME_init_manager = "sysvinit"
+(OR)
 UsrMerge Systemd and remove SysVinit:
 DISTRO_FEATURES:append = " usrmerge"
 DISTRO_FEATURES:append = " systemd"
