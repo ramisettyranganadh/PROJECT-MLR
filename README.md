@@ -10,6 +10,14 @@
 
 -------------------------------------------------------------------
 
+UsrMerge Systemd and remove SysVinit:
+DISTRO_FEATURES:append = " usrmerge"
+DISTRO_FEATURES:append = " systemd"
+VIRTUAL-RUNTIME_init_manager = "systemd"
+VIRTUAL-RUNTIME_initscripts = ""
+
+-------------------------------------------------------------------
+
 1. sudo apparmor_parser -R /etc/apparmor.d/unprivileged_userns;
 2. lsblk; sudo umount /dev/mmcblk0; sudo mkfs.vfat -F 32 /dev/mmcblk0;
 3. cd tmp/deploy/images/beaglebone-yocto/
