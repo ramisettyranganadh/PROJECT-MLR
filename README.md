@@ -10,6 +10,11 @@
 
 -------------------------------------------------------------------
 
+Stuck in GNU Bash ? then add init manager in Yocto
+
+UsrMerge BusyBox:
+VIRTUAL-RUNTIME_init_manager = "busybox"
+(OR)
 UsrMerge SysVinit:
 VIRTUAL-RUNTIME_init_manager = "sysvinit"
 (OR)
