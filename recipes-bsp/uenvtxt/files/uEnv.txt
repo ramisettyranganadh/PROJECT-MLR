@@ -1,4 +1,5 @@
-bootpart=0:1
-root=/dev/sda1 ro
-mmcroot=/dev/sda1 ro
-mmcrootfstype=ext4 rootwait
+usb_start=usb start
+load_image=load usb 0:1 ${loadaddr} /boot/zImage
+load_fdt=load usb 0:1 ${fdtaddr} /boot/am335x-boneblack.dtb
+set_bootargs=setenv bootargs console=ttyO0,115200n8 root=/dev/sda1 rootfstype=ext4 rootwait
+uenvcmd=run usb_start; run load_image; run load_fdt; run set_bootargs; bootz ${loadaddr} - ${fdtaddr}
