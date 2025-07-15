@@ -1,0 +1,4 @@
+bootpart=0:1
+root=/dev/sda1 ro
+mmcroot=/dev/sda1 ro
+mmcrootfstype=ext4 rootwait
