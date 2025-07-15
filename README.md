@@ -1,13 +1,13 @@
 # PROJECT-MLR
 
-1. git clone https://github.com/ramisettyranganadh/PROJECT-YOC.git;
-2. git clone https://github.com/ramisettyranganadh/PROJECT-MLR.git;
+1. git clone https://github.com/ramisettyranganadh/PROJECT-YOC.git -b styhead;
+2. git clone https://github.com/ramisettyranganadh/PROJECT-MLR.git meta-mylayer;
 3. cd PROJECT-YOC; source oe-init-build-env;
-4. bitbake-layers add-layer ../../PROJECT-MLR;
+4. bitbake-layers add-layer ../meta-mylayer;
 5. IMAGE_INSTALL += "dataloader"
 6. IMAGE_INSTALL += "application"
 7. IMAGE_INSTALL:append = " uenvtxt"
-8. bitbake core-image-sato -c clean; bitbake core-image-sato;
+8. bitbake core-image-sato -c cleanall; bitbake core-image-sato;
 
 -------------------------------------------------------------------
 
