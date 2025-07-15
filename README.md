@@ -6,7 +6,8 @@
 4. bitbake-layers add-layer ../../PROJECT-MLR;
 5. IMAGE_INSTALL += "dataloader"
 6. IMAGE_INSTALL += "application"
-7. bitbake core-image-sato -c clean; bitbake core-image-sato;
+7. IMAGE_INSTALL:append = " uenvtxt"
+8. bitbake core-image-sato -c clean; bitbake core-image-sato;
 
 -------------------------------------------------------------------
 
