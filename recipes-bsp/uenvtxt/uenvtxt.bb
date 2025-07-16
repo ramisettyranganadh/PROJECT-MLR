@@ -12,6 +12,7 @@ do_install() {
 }
 
 FILES:${PN} += "/boot/uEnv.txt"
+IMAGE_BOOT_FILES += "uEnv.txt"
 
 python do_display_banner() {
     bb.plain("***********************************************");
